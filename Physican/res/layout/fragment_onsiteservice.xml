@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:titlebar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <customview.MyTitleBar
+        android:id="@+id/onsiteservice_mytitlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/lightgreen_titlebar"
+       android:paddingLeft="4dp"
+       	android:paddingRight="4dp"
+         titlebar:leftImg="@android:drawable/ic_menu_rotate"
+        titlebar:titleText="@string/onsite" >
+    </customview.MyTitleBar>
+
+    <LinearLayout
+        android:id="@+id/tabs_onsite"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/waitingOnsite_onsiteService"
+            style="@style/tabs_onsite_style"
+            android:text="@string/waiting_onsite" />
+
+        <TextView
+            android:id="@+id/waitingColse_onsiteService"
+            style="@style/tabs_onsite_style"
+            android:text="@string/waiting_colse" />
+
+        <TextView
+            android:id="@+id/finished_onsiteService"
+            style="@style/tabs_onsite_style"
+            android:text="@string/finished" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/showGreenLine_onsite"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/greenLine_visiting_onsite"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/green_underline" />
+
+        <ImageView
+            android:id="@+id/greenLine_colse_onsite"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/grey_underline" />
+
+        <ImageView
+            android:id="@+id/greenLine_finished_onsite"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/grey_underline" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/showDetails_onsite_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="12dp" >
+    </ListView>
+
+</LinearLayout>

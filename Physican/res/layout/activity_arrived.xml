@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/arrived_back"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/lightgreen_titlebar" >
+
+        <ImageView
+            android:id="@+id/imageView_arrived_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/btn_back_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/imageView_arrived_back"
+            android:gravity="center"
+            android:text="@string/onsite"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#efeff4" >
+
+        <customview.ScreenRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/space_arrived"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#efeff4" />
+
+            <TextView
+                android:id="@+id/baseinfo_arrived"
+                style="@style/introduce_onsite_style"
+                android:layout_below="@id/space_arrived"
+                android:text="@string/baseinfo" />
+
+            <customview.ScreenRelativeLayout
+                android:id="@+id/data_arrived"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/baseinfo_arrived"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rl_bg_shape" >
+
+                <customview.RoundImageView
+                    android:id="@+id/imageView_arrived_photo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/app_icon" />
+
+                <TextView
+                    android:id="@+id/textView_arrived_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imageView_arrived_photo"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/imageView_arrived_photo"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView_arrived_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView_arrived_photo"
+                    android:layout_alignLeft="@+id/textView_arrived_name"
+                    android:textSize="14sp" />
+            </customview.ScreenRelativeLayout>
+
+            <customview.ScreenRelativeLayout
+                android:id="@+id/srl_moblie"
+                style="@style/srl_onsite_style"
+                android:layout_below="@id/data_arrived" >
+
+                <TextView
+                    android:id="@+id/moblie_arrived"
+                    style="@style/introduce_onsite_style"
+                    android:text="@string/moblie" />
+
+                <customview.ScreenRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/moblie_arrived"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/rl_bg_shape" >
+
+                    <ImageView
+                        android:id="@+id/rightArrow_arrived_moblie"
+                        style="@style/imageView_onsite_style" />
+
+                    <TextView
+                        android:id="@+id/moblie_arrived_detail"
+                        style="@style/textview_onsite_style"
+                        android:layout_toLeftOf="@id/rightArrow_arrived_moblie" />
+                </customview.ScreenRelativeLayout>
+            </customview.ScreenRelativeLayout>
+
+            <!-- 联系人地址 -->
+
+            <customview.ScreenRelativeLayout
+                android:id="@+id/srl_location"
+                style="@style/srl_onsite_style"
+                android:layout_below="@id/srl_moblie" >
+
+                <TextView
+                    android:id="@+id/location_arrived"
+                    style="@style/introduce_onsite_style"
+                    android:text="@string/location" />
+
+                <customview.ScreenRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/location_arrived"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/rl_bg_shape" >
+
+                    <ImageView
+                        android:id="@+id/rightArrow_location_moblie"
+                        style="@style/imageView_onsite_style" />
+
+                    <TextView
+                        android:id="@+id/location_arrived_detail"
+                        style="@style/textview_onsite_style"
+                        android:layout_toLeftOf="@id/rightArrow_location_moblie" />
+                </customview.ScreenRelativeLayout>
+            </customview.ScreenRelativeLayout>
+
+            <!-- 主诉详情 -->
+
+            <customview.ScreenRelativeLayout
+                android:id="@+id/srl_zhusu"
+                style="@style/srl_onsite_style"
+                android:layout_below="@id/srl_location" >
+
+                <TextView
+                    android:id="@+id/zhusu_arrived"
+                    style="@style/introduce_onsite_style"
+                    android:text="@string/zhusu" />
+
+                <customview.ScreenRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/zhusu_arrived"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/rl_bg_shape" >
+
+                    <TextView
+                        android:id="@+id/zhusu_arrived_detail"
+                        style="@style/textview_onsite_style" />
+                </customview.ScreenRelativeLayout>
+            </customview.ScreenRelativeLayout>
+
+            <Button
+                android:id="@+id/button_checkNow"
+                style="@style/button_onsite_style"
+                android:layout_below="@id/srl_zhusu"
+                android:text="@string/checknow" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_below="@id/button_checkNow"
+                android:background="#efeff4" />
+        </customview.ScreenRelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

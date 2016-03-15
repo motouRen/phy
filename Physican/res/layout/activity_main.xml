@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7" >
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/border_et_color" />
+
+    <RelativeLayout
+        android:id="@+id/container_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioGroup
+            android:id="@+id/radiogroup_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_inquerymessage"
+                style="@style/tabs_style"
+                android:checked="true"
+                android:drawableTop="@drawable/selector_inquerymessage"
+                android:text="@string/inquerymessage"
+                android:textColor="@drawable/selector_textcolor_tabs" />
+
+            <RadioButton
+                android:id="@+id/radio_onsiteservice"
+                style="@style/tabs_style"
+                android:drawableTop="@drawable/selector_onsiteservice"
+                android:text="@string/onsiteservice"
+                android:textColor="@drawable/selector_textcolor_tabs" />
+
+            <RadioButton
+                android:id="@+id/radio_personcenter"
+                style="@style/tabs_style"
+                android:drawableTop="@drawable/selector_personcenter"
+                android:text="@string/personcenter"
+                android:textColor="@drawable/selector_textcolor_tabs" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView_redPoint_onsiteService"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/redpoint"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView_redPoint_inquiryMessage"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/redpoint"
+            android:gravity="center"
+            android:text="1"
+            android:visibility="gone"
+            android:textColor="@color/white"
+        
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

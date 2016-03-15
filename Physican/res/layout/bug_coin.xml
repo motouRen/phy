@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/topbar_bg" >
+
+        <TextView
+            android:id="@+id/tv_buy_gold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="购买数量"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/lin_mygold"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/bug_coin_back"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/back_icon2x" />
+
+            <TextView
+                android:id="@+id/bug_coin_gmyb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="返回"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+            </LinearLayout>
+    </RelativeLayout>
+    <ListView 
+        android:id="@+id/bug_coin_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:fadingEdge="none"
+    	android:fastScrollEnabled="true"
+    	android:focusable="false"
+    	android:divider="@null"
+        android:focusableInTouchMode="true"
+        ></ListView>
+    </LinearLayout>

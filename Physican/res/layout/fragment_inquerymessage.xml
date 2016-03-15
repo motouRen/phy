@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:titlebar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <customview.MyTitleBar
+        android:id="@+id/inquerymessage_mytitlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/lightgreen_titlebar"
+        android:clickable="true"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        titlebar:leftHeight="49dp"
+        titlebar:leftImg="@android:drawable/ic_menu_rotate"
+        titlebar:leftWidth="49dp"
+        titlebar:rightHeight="49dp"
+        titlebar:rightImg="@drawable/btn_search_img_normal"
+        titlebar:rightWidth="49dp"
+        titlebar:titleColor="@color/white"
+        titlebar:titleText="@string/message" >
+    </customview.MyTitleBar>
+
+    <ListView
+        android:id="@+id/listView_inquiryMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:paddingLeft="12dp" >
+    </ListView>
+
+</LinearLayout>

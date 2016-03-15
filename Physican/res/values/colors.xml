@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#fff</color>
+
+    <!-- 登录界面相关颜色 -->
+
+    <color name="border_et_color">#d5d5d3</color>
+    <color name="login_tv_color">#444343</color>
+
+    <!-- 问诊消息界面相关颜色 -->
+    <color name="lightgreen_selected_tabs">#61b46a</color>
+    <color name="pinkcolor">#fe91a9</color>
+    <color name="gray_textcolor">#747474</color>
+    <color name="darkgray_unselected_tabs">#bbbbbb</color>
+    <color name="lightgreen_titlebar">#50ac59</color>
+    
+    
+    
+    <color name="meal">#ACD4FF</color>
+    <color name="common_bg">#f7f7f7</color>
+    <color name="common_bg1">#f2f2f2</color>
+    <color name="red_two">#fb63a9</color>
+    <color name="top_bar_normal_bg">#ed6d6d</color>
+    <color name="red_three">#eba3c1</color>
+   
+    <color name="rel_buy_col">#ff0096</color>
+    <color name="green">#008000</color> <!-- 绿色 -->
+    <color name="gray_normal">#666667</color>
+    <color name="gray2">#666666</color>
+    <color name="white_bg">#ffffff</color>
+    <drawable name="transparent_background">#00000000</drawable>
+    <color name="red_one">#871e41</color>
+    <color name="gray_edit_text">#909090</color>
+    <color name="color_dark_grey">#EFEFF4</color>
+    <color name="transparent">#00000000</color>
+    <color name="province_line_border">#D0D0D0</color>
+    <color name="backgroundMYD">#EFEFF4</color>
+    <color name="textColor">#949494</color>
+    <color name="buttonColor">#FF9F7C</color>
+    <color name="buttonColor2">#FF8000</color>
+    <color name="red_bg">#ff0000</color>
+    <color name="blue_bg">#0000ff</color>
+    <color name="crop_background">#737373</color>
+    <color name="window_bg">#88838B8B</color>
+    
+    <color name="scan_bg">#7f000000</color>
+    
+
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="black">#000000</color>
+    <color name="m_blue">#007AFF</color>
+
+    <color name="btn_blue_normal">#1e90ff</color>
+    <color name="btn_blue_pressed">#0066FF</color>
+
+    
+    <color name="common_top_bar_blue">#4ebcd3</color>
+    <color name="btn_login_normal">#00acff</color>
+    <color name="btn_login_pressed">#46678d</color>
+    <color name="btn_logout_normal">#d33f3f</color>
+    <color name="btn_logout_pressed">#DA5A4D</color>
+    <color name="btn_register_normal">#ffffff</color>
+    <color name="btn_register_pressed">#00acff</color>
+    <color name="common_bottom_bar_normal_bg">#2d2f31</color>
+    <color name="common_bottom_bar_selected_bg">#161718</color>
+    <color name="common_botton_bar_blue">#2ea7e0</color>
+    <color name="btn_pressed_green_solid">#B6DA53</color>
+    <color name="divider_list">#d4d4d4</color>
+    <color name="error_item_color">#F6EBE6</color>
+    <color name="bottom_bar_normal_bg">#2D2F31</color>
+    <color name="bottom_text_color_normal">#ffffff</color>
+    <color name="btn_white_normal">#f7f8f8</color>
+    <color name="btn_white_pressed">#b5b5b6</color>
+    <color name="btn_green_noraml">#68C270</color>
+    <color name="btn_green_pressed">#6FCD78</color>
+    <color name="btn_gray_normal">#c0c0c0</color>
+    <color name="btn_gray_pressed_status">#b5b5b6</color>
+    <color name="btn_gray_pressed">#666667</color>
+    <color name="orange">#FFA500</color>
+    <color name="gray_pressed">#b5b5b6</color>
+    <color name="grid_state_pressed">#1Affffff</color>
+    <color name="grid_state_focused">#80000000</color>
+    <color name="voip_interface_text_color">#bababa</color>
+    <color name="black_deep">#FF000000</color>
+    <color name="btn_answer_pressed">#4ebcd3</color>
+    <color name="btn_answer_normal">#2dafa3</color>
+    <color name="gray1">#cccccc</color>
+    <color name="tabbg">#fe76b4</color>
+
+</resources>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg1" >
+
+    <RelativeLayout
+        android:id="@+id/rel_evaluate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/top_bar_normal_bg" >
+
+        <TextView
+            android:id="@+id/tv_buy_gold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="评价"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/lin_mygold"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/back_icon2x" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="问诊"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_docter_info"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@id/rel_evaluate"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="5dp"
+            android:text="1.3  血管性PKS  是否为一疾病实体还有争论。典基可引起急性对侧肢体PD症状，MRI检查可帮助诊断性对侧肢体PD"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="柯海燕"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="妇科  副主任医生"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@+id/rel_docter_info"
+        android:layout_marginTop="1dp"
+        android:background="@color/white" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_evalute"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@color/white"
+        android:layout_below="@+id/relativeLayout1" 
+        android:layout_marginTop="1dp">
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:hint="请输入文字评价、意见建议" >
+
+            <requestFocus />
+        </EditText>
+
+    </RelativeLayout>
+	
+    <RelativeLayout
+            android:id="@+id/rel_sure_evalute"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/rel_evalute"
+            android:background="@color/rel_buy_col">
+            <TextView
+                android:id="@+id/tv_sure_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="确认"
+                android:textColor="@color/white"
+                />
+        </RelativeLayout>
+    
+</RelativeLayout>

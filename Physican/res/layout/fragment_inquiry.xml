@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+         android:id="@+id/imageView_inquiry_back"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/lightgreen_titlebar" >
+
+        <ImageView
+           android:id="@+id/imageView_inquiry_back_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:clickable="true"
+            android:src="@drawable/btn_back_normal" />
+
+        <TextView
+            android:id="@+id/textView_topbar_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/imageView_inquiry_back_1"
+            android:gravity="center"
+            android:text="@string/message"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView_topbar_center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/inquiry"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tabs_inquiry"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/myreply_inquiry"
+            style="@style/tabs_inquiry_style"
+            android:text="@string/myreply" />
+
+        <TextView
+            android:id="@+id/myhelperreply_inquiry"
+            style="@style/tabs_inquiry_style"
+            android:text="@string/myhelperreply" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/showPinkLine_inquiry"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/pinkLine_myReply"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/pink_underline" />
+
+        <ImageView
+            android:id="@+id/pinkLine_myHelperReply"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/grey_underline" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/showDetails_inquiry_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+    </ListView>
+
+</LinearLayout>

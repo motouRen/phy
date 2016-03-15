@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/doctor_list_item_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp" >
+
+        <com.winning.pregnancy.view.CircleImageView
+            android:id="@+id/current_list_tx"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ddf" />
+
+        <TextView
+            android:id="@+id/current_list_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/current_list_tx"
+            android:text="柯海燕"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/current_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/current_list_name"
+            android:layout_below="@id/current_list_name"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="45dp"
+            android:singleLine="true"
+            android:text="常州市第一人民医院" 
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/current_list_name"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/current_list_name"
+            android:layout_marginRight="10dp"
+            android:text="妇科  副主任医生" 
+            android:textSize="14sp"/>
+		 <TextView
+		     android:id="@+id/current_zt" 
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:text="进行"
+		     android:layout_marginTop="10dp"
+		     android:textColor="#FFFFFF"
+		     android:layout_alignParentRight="true"
+		     android:layout_marginRight="30dp"
+		     android:background="#00FF00"
+		     android:visibility="gone"/>
+		 <ImageView 
+		     android:layout_width="35dp"
+		     android:layout_height="35dp"
+		     android:layout_alignParentRight="true"
+		     android:layout_centerVertical="true"
+		     android:layout_marginRight="5dp"
+		     android:src="@drawable/btn_right"
+		     android:layout_below="@id/current_zt"/> 
+    </RelativeLayout>
+</LinearLayout>

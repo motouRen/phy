@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg2"
+    android:orientation="vertical" >
+
+    <include layout="@layout/action_menu" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/video_lin_title"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <Button
+            android:id="@+id/video_btn_bc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/video_btn_white"
+            android:gravity="center"
+            android:minHeight="0dp"
+            android:onClick="click"
+            android:text="二维B超"
+            android:textColor="@color/red_two"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/video_btn_mx"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/video_btn_red"
+            android:gravity="center"
+            android:minHeight="0dp"
+            android:onClick="click"
+            android:text="3D模型"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/video_btn_cc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/video_btn_white"
+            android:gravity="center"
+            android:minHeight="0dp"
+            android:onClick="click"
+            android:text="四维彩超"
+            android:textColor="@color/red_two"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/move_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="70dp"
+        android:paddingTop="50dp" />
+    <!-- </RelativeLayout> -->
+
+</LinearLayout>

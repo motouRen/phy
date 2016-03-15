@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/tiecard_item_zj"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/tiecard_color" >
+
+        <TextView
+            android:id="@+id/tiecard_item_own"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自己" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tiecard_item_fm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/tiecard_color" >
+
+        <TextView
+            android:id="@+id/tiecard_item_parents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="父母" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tiecard_item_po"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/tiecard_color" >
+
+        <TextView
+            android:id="@+id/tiecard_item_spouse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="配偶" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tiecard_item_zn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/tiecard_color" >
+
+        <TextView
+            android:id="@+id/tiecard_item_children"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="子女" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tiecard_item_py"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/tiecard_color" >
+
+        <TextView
+            android:id="@+id/tiecard_item_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="朋友" />
+    </LinearLayout>
+
+</LinearLayout>

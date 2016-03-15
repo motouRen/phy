@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EFEFF4"
+    android:orientation="vertical" >
+
+    <include layout="@layout/action_menu" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/textColor"
+        android:textSize="12sp" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#EFEFF4"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/doctor_list_item_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <com.winning.pregnancy.view.CircleImageView
+                        android:id="@+id/im_head"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ddf" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/im_head"
+                        android:text="柯海燕"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_position"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tv_name"
+                        android:layout_below="@id/tv_name"
+                        android:layout_marginTop="5dp"
+                        android:text="常州市第一人民医院"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_job"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_name"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/tv_name"
+                        android:text="妇科  副主任医生"
+                        android:textColor="#707070" />
+
+                    <TextView
+                        android:id="@+id/tv_intro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tv_position"
+                        android:layout_below="@+id/tv_position"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:maxLines="2"
+                        android:text="冠心病常州市第一人民医院常州市..."
+                        android:textColor="#707070" />
+                </RelativeLayout>
+
+                <View style="@style/list_item_seperator_layout" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/m_blue"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="1dp"
+                        android:background="@color/white"
+                        android:orientation="horizontal" >
+
+                        <RadioGroup
+                            android:id="@+id/webgroup"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <RadioButton
+                                android:id="@+id/hmy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:button="@null"
+                                android:gravity="center_horizontal"
+                                android:padding="5dp"
+                                android:text="很满意"
+                                android:textColor="@color/m_blue" />
+
+                            <View style="@style/list_item_cell_seperator_layout_pl" />
+
+                            <RadioButton
+                                android:id="@+id/my"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:button="@null"
+                                android:gravity="center_horizontal"
+                                android:padding="5dp"
+                                android:text="满意"
+                                android:textColor="@color/m_blue" />
+
+                            <View style="@style/list_item_cell_seperator_layout_pl" />
+
+                            <RadioButton
+                                android:id="@+id/bmy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:button="@null"
+                                android:gravity="center_horizontal"
+                                android:padding="5dp"
+                                android:text="不满意"
+                                android:textColor="@color/m_blue" />
+                        </RadioGroup>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <GridView
+                        android:id="@+id/list_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:descendantFocusability="blocksDescendants"
+                        android:divider="@null"
+                        android:numColumns="2" >
+                    </GridView>
+                </LinearLayout>
+
+                <View style="@style/list_item_seperator_layout" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/yjjy"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="请输入文字评价、意见、建议。"
+                        android:maxLines="6"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/list_item_seperator_layout" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="bottom"
+                android:visibility="gone"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/savebutton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FB5BA5"
+                    android:text="确认提交"
+                    android:textColor="@color/white_bg"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

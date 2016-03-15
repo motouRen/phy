@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/tiecard_item_ck"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/tiecard_color" >
+
+        <TextView
+            android:id="@+id/tiecard_item_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="磁卡" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tiecard_item_bzk"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/tiecard_color" >
+
+        <TextView
+            android:id="@+id/tiecard_item_securitycard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保障卡" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tiecard_item_ick"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/tiecard_color" >
+
+        <TextView
+            android:id="@+id/tiecard_item_iccard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IC卡" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tiecard_item_blh"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/tiecard_color" >
+
+        <TextView
+            android:id="@+id/tiecard_item_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="病历号" />
+    </LinearLayout>
+
+</LinearLayout>

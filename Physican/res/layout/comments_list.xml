@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" 
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/doctor_list_item_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/comment_list_xm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:text="柯海燕"
+            android:textSize="18sp" 
+            android:textColor="#414141"/>
+
+        <TextView
+            android:id="@+id/comment_list_ycq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/comment_list_xm"
+            android:layout_marginTop="5dp"
+            android:text="(2015-09-09)"
+            android:textSize="18sp" 
+            android:textColor="#414141"/>
+
+        <TextView
+            android:id="@+id/comment_list_my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="非常满意" 
+            android:textSize="20sp"
+            android:textColor="#ff4b97"/>
+        
+    </RelativeLayout>
+        <TextView 
+            android:id="@+id/comment_list_pj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:text="希望讲的更透彻"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/shape_text"/>
+        <TextView 
+            android:id="@+id/comment_list_wt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:text="感冒"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/comment_list_xq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="问题:" 
+            android:textColor="#414141"/>
+
+</LinearLayout>

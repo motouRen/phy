@@ -1,0 +1,187 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F4F4F4"
+    android:cacheColorHint="#00000000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#F4F4F4"
+        android:cacheColorHint="#00000000"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:cacheColorHint="#00000000"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="姓名"
+                android:textColor="#ff000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/brlist_item_hzxm"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textColor="#ff000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:cacheColorHint="#00000000"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="卡类型"
+                android:textColor="#ff000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/brlist_item_cardnotype"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textColor="#ff000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:cacheColorHint="#00000000"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="卡号"
+                android:textColor="#ff000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/brlist_item_cardno"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textColor="#ff000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:cacheColorHint="#00000000"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="病历号"
+                android:textColor="#ff000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/brlist_item_blh"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textColor="#ff000000"
+                android:textSize="15sp" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:cacheColorHint="#00000000"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="身份证号"
+                android:textColor="#ff000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/brlist_item_sfzh"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textColor="#ff000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:cacheColorHint="#00000000"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="联系电话"
+                android:textColor="#ff000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/brlist_item_lxdh"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textColor="#ff000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:cacheColorHint="#00000000"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="最近一次挂号"
+                android:textColor="#ff000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/brlist_item_ghrq"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textColor="#ff000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

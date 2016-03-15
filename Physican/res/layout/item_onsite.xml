@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="113dp" >
+
+    <customview.RoundImageView
+        android:id="@+id/imageView_onsite_photo"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/app_icon" />
+
+    <ImageView
+        android:id="@+id/imageView_onsite_rightArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="10dp"
+        android:src="@drawable/icon_right_arrow" />
+
+    <LinearLayout
+        android:id="@+id/top_onsite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@id/imageView_onsite_rightArrow"
+        android:layout_toRightOf="@id/imageView_onsite_photo"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView_onsite_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/imageView_onsite_photo"
+            android:layout_weight="2"
+            android:gravity="left|center_vertical"
+            android:singleLine="true"
+            android:text="TextView"
+            android:textSize="@dimen/lager_TextSize" />
+
+        <TextView
+            android:id="@+id/textView_onsite_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/imageView_onsite_photo"
+            android:layout_weight="5"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:text="TextView"
+            android:textColor="#747474"
+            android:textSize="@dimen/small_TextSize" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/imageView_onsite_photo"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_onsite_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imageView_onsite_photo"
+        android:layout_below="@id/top_onsite"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/imageView_onsite_rightArrow"
+        android:layout_toRightOf="@id/imageView_onsite_photo"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="2" />
+
+    <TextView
+        android:id="@+id/textView_onsite_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/imageView_onsite_photo"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@id/imageView_onsite_rightArrow"
+        android:background="@color/darkgray_unselected_tabs" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/textView_onsite_line"
+        android:layout_below="@+id/textView_onsite_line"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageView_onsite_status"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/play2" />
+
+        <TextView
+            android:id="@+id/textView_onsite_showLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="TextView"
+            android:textColor="@color/darkgray_unselected_tabs" />
+    </LinearLayout>
+
+</RelativeLayout>

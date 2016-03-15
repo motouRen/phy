@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:id="@+id/buy_coin_list_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp">
+        <TextView 
+            android:id="@+id/bug_coin_list_je"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="0.01元"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/bug_coin_list_gs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+            android:text="100个"
+            android:textSize="18sp"
+            android:textColor="#909090"/>
+    </RelativeLayout>
+   <View android:layout_height="1px"
+           android:layout_width="fill_parent"
+           android:background="#e6e6e6"/>
+    </LinearLayout>

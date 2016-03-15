@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4"
+    android:orientation="vertical" >
+
+    <customview.MyTitleBar
+        android:id="@+id/personcenter_mytitlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/lightgreen_titlebar"
+        android:clickable="false"
+        myapp:titleText="@string/settings" >
+    </customview.MyTitleBar>
+
+    <RelativeLayout
+        style="@style/relativelayout_personcenter_style"
+        android:layout_marginTop="50dp" >
+
+        <TextView
+            style="@style/textview_personcenter_style"
+            android:text="@string/reciviemessage" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton_personCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@color/white"
+            android:button="@drawable/selector_toggle"
+            android:textOn=""
+            android:textOff=""
+           >
+        </ToggleButton>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/myinfo_personcenter"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white" >
+
+        <TextView
+            style="@style/textview_personcenter_style"
+            android:text="@string/myinfo" />
+
+        <ImageView style="@style/imageview_personcenter_style" >
+        </ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sao1sao_personcenter"
+        style="@style/relativelayout_personcenter_style" >
+
+        <TextView
+            style="@style/textview_personcenter_style"
+            android:text="@string/sao1sao" />
+
+        <ImageView style="@style/imageview_personcenter_style" >
+        </ImageView>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_exitLogin"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/lightgreen_titlebar"
+        android:text="@string/exitlogin"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+</LinearLayout>

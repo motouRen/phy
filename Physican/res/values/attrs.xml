@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- titlebar自定义属性 -->
+    <declare-styleable name="MyTitlebar">
+        <attr name="titleText" format="reference|string" />
+        <attr name="titleImg" format="reference|color" />
+        <attr name="titleColor" format="color" />
+        <attr name="titleSize" format="dimension" />
+        <attr name="leftImg" format="reference|color" />
+        <attr name="leftWidth" format="dimension" />
+        <attr name="leftHeight" format="dimension" />
+        <attr name="leftVisiable" format="boolean" />
+        <attr name="rightVisiable" format="boolean" />
+        <attr name="rightImg" format="reference|color" />
+        <attr name="rightWidth" format="dimension" />
+        <attr name="rightHeight" format="dimension" />
+    </declare-styleable>
+    <!-- 内部自定义titlebar -->
+    <declare-styleable name="MyInnerTopbar">
+        <attr name="centerText" format="reference|string" />
+        <attr name="leftText" format="reference|string" />
+        <attr name="leftSrc" format="reference|color" />
+    </declare-styleable>
+
+
+    <declare-styleable
+        name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    
+    <declare-styleable name="Emojicon">
+        <attr name="emojiconSize" format="dimension"/>
+        <attr name="emojiconTextStart" format="integer"/>
+        <attr name="emojiconTextLength" format="integer"/>
+    </declare-styleable>
+
+    
+</resources>

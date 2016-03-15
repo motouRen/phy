@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg1"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/top_bar_normal_bg" >
+
+        <TextView
+            android:id="@+id/tv_buy_gold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="医生详情"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/lin_mygold"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/doctor_fh"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/back_icon2x" />
+
+            <TextView
+                android:id="@+id/doctor_yslb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="医生列表"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_docter_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <com.winning.pregnancy.view.CircleImageView
+            android:id="@+id/imageView1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ddf" />
+
+        <TextView
+            android:id="@+id/doctor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="柯海燕" 
+            android:textSize="20sp" 
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/doctor_zw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/doctor_name"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="妇科  副主任医生"
+            android:textColor="#363636" />
+
+        <TextView
+            android:id="@+id/doctor_yy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/doctor_zw"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="常州市第一人民医院" 
+            android:textColor="#696969"/>
+        
+        <TextView
+            android:id="@+id/doctor_gz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:text="+关注" 
+            android:textColor="#ff0000ff"/>
+
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp" >
+
+        <RelativeLayout
+            android:id="@+id/twzx"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/doctor_tw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="图文"
+                android:textSize="20sp"
+                android:textColor="#0064ff" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/doctor_infodetail_yb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/doctor_tw"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="2孕币/次" 
+                android:textColor="#060606"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/doctor_dh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="电话"
+                android:textSize="20sp" >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/doctor_dh"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="暂未开通" 
+                android:textColor="#060606"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/twzx2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/doctor_jh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="上门"
+                android:textColor="#0064ff"
+                android:textSize="20sp" >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/doctor_jh"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="1孕币/次" 
+                android:textColor="#060606"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/doctor_xq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="医生详情"
+            android:layout_marginLeft="5dp" 
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/doctor_ysxq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/doctor_xq"
+            android:layout_marginLeft="10dp" 
+            android:layout_marginRight="10dp"
+            android:text=" 1.3  血管性PKS  是否为一疾病实体还有争论。典型的血管性PKS为在双侧半球深部白质有腔隙性梗死，引起宽基小碎步和冻结足的PD步态障碍，通常为隐匿性起病、阶梯性进展；但梗死累及壳核或壳核苍白球丘脑通路的基底节区或黑质时可引起急性对侧肢体PD症状，MRI检查可帮助诊断" 
+            android:textColor="#565656"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:text="用户评价" 
+            android:textColor="#000000"/>
+
+    	<TextView
+    	    android:id="@+id/doctor_sypl"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_toLeftOf="@+id/doctor_imge"
+    	    android:text="所有评论" 
+    	    android:layout_marginRight="5dp"
+    	    android:textColor="#000000"/>
+    	<ImageView 
+    	    android:id="@+id/doctor_imge"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	     android:layout_marginRight="10dp"
+    	     android:layout_marginTop="5dp"
+    	     android:layout_alignParentRight="true"
+    	    android:src="@drawable/arrow_gray"/>
+    </RelativeLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/doctor_pj_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"      
+            android:layout_centerVertical="true"
+             >
+        </ListView>
+
+    </RelativeLayout>
+
+</LinearLayout>

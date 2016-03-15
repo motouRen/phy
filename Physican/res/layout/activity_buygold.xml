@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/topbar_bg" >
+
+        <TextView
+            android:id="@+id/tv_buy_gold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="孕币购买"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/lin_mygold"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/activity_buygold_back"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/back_icon2x" />
+
+            <TextView
+                android:id="@+id/activity_buygold_wdyb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的孕币"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+            </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.82"
+        android:background="@color/common_bg1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:id="@+id/tv_buycount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="购买数量" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_buygold_rl"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/activity_buygold_je"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="请选择" />
+
+            <ImageView 
+                android:id="@+id/activity_buygold_iv"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/back_icon21x"                
+                />
+            <TextView 
+                android:id="@+id/activity_bug_gold_gs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:layout_marginRight="5dp"
+                 android:layout_toLeftOf="@+id/activity_buygold_iv"
+                android:text=""
+                />
+        </RelativeLayout>
+		
+         <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:id="@+id/tv_payway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="支付方式" />
+            
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_payway"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white" >
+
+           
+            <ImageView 
+                android:id="@+id/img_payfor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/img_pay"                
+                />
+
+			 <TextView
+			     android:id="@+id/tv_payfor"
+			     android:layout_width="wrap_content"
+			     android:layout_height="wrap_content"			     
+			     android:layout_marginLeft="8dp"
+			     android:layout_marginTop="8dp"
+			     android:layout_toRightOf="@+id/img_payfor"
+			     android:text="支付宝支付"
+			     android:textSize="20sp" />
+
+			 <TextView
+			     android:layout_width="wrap_content"
+			     android:layout_height="wrap_content"
+			     android:layout_alignLeft="@+id/tv_payfor"
+			     android:layout_below="@+id/tv_payfor"
+			     android:layout_marginTop="3dp"
+			     android:text="推荐安装支付宝客户端的用户使用"
+			     android:textSize="13sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="22dp" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_sure_buy"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/rel_buy_col">
+            <TextView
+                android:id="@+id/tv_sure_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="确认"
+                android:textColor="@color/white"
+                />
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

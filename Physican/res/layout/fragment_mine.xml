@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+         android:id="@+id/rl_mine_back"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/lightgreen_titlebar" >
+
+        <ImageView
+            android:id="@+id/imageView_mine_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/btn_back_normal" />
+
+        <TextView
+            android:id="@+id/textView_mine_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/imageView_mine_back"
+            android:gravity="center"
+            android:text="@string/setting"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView_mine_center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBaseline="@+id/textView_topbar_left"
+            android:layout_alignBottom="@+id/textView_topbar_left"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/me"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#efeff4" >
+
+        <customview.ScreenRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp" >
+
+            <TextView
+                android:id="@+id/data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/data"
+                android:textColor="@color/gray_textcolor"
+                android:textSize="14sp" />
+
+            <customview.ScreenRelativeLayout
+                android:id="@+id/data_sr"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_below="@id/data"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rl_bg_shape" >
+
+                <customview.RoundImageView
+                    android:id="@+id/imageView_mine_photo"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/headphoto" />
+
+                <TextView
+                    android:id="@+id/textView_mine_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imageView_mine_photo"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/imageView_mine_photo"
+                    android:text="加载中..."
+                    android:textColor="@color/gray_textcolor"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textView_mine_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView_mine_photo"
+                    android:layout_alignLeft="@+id/textView_mine_location"
+                    android:text="加载中..."
+                    android:textSize="15sp" />
+            </customview.ScreenRelativeLayout>
+
+            <customview.ScreenRelativeLayout
+                android:id="@+id/info_sr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/data_sr"
+                android:layout_marginTop="40dp" >
+
+                <TextView
+                    android:id="@+id/info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/info"
+                    android:textColor="@color/gray_textcolor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/info_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/info"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rl_bg_shape"
+                    android:lineSpacingExtra="5dp"
+                    android:padding="8dp"
+                    android:text="@string/info"
+                    android:textSize="16sp" />
+            </customview.ScreenRelativeLayout>
+
+            <customview.ScreenRelativeLayout
+                android:id="@+id/money_sr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/info_sr"
+                android:layout_marginTop="40dp" >
+
+                <TextView
+                    android:id="@+id/inquiry_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/money"
+                    android:textColor="@color/gray_textcolor"
+                    android:textSize="14sp" />
+
+                <customview.ScreenRelativeLayout
+                    android:id="@+id/SRL_mine_inquriynum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/inquiry_num"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:id="@+id/money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/inquiry_num"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/white"
+                        android:padding="8dp"
+                        android:text="问诊总数"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/show_inquiryCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/gray_textcolor"
+                        android:textSize="14sp" />
+                </customview.ScreenRelativeLayout>
+
+                <customview.ScreenRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/SRL_mine_inquriynum"
+                    android:background="@drawable/rl_bg_shape" >
+
+                    <TextView
+                        android:id="@+id/money_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/inquiry_num"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="10dp"
+                        android:padding="8dp"
+                        android:text="孕币数量"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/show_moneyCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/gray_textcolor"
+                        android:textSize="14sp" />
+                </customview.ScreenRelativeLayout>
+            </customview.ScreenRelativeLayout>
+        </customview.ScreenRelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
